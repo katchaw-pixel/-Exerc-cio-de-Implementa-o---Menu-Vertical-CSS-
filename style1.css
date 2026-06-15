@@ -1,0 +1,53 @@
+
+.menu{
+    list-style:none;
+}
+
+.menu{
+    width:180px;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li:hover > ul{
+    display:block;
+}
+.menu li a{
+    display:block;
+    background:#666;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-bottom:1px solid white;
+}
+
+.menu a:hover{
+    background:orange;
+}
+/* Esconde os submenus */
+.submenu,
+.subsubmenu{
+    display:none;
+    position:absolute;
+    top:0;
+    left:100%;
+    width:180px;
+    list-style:none;
+}
+
+
+/* Nível 3 aparece ao lado do nível 2 */
+.submenu li:hover > .subsubmenu{
+    display:block;
+}
+
+/* Cores diferentes para visualizar os níveis */
+.submenu a{
+    background:#999;
+}
+
+.subsubmenu a{
+    background:#0099cc;
+}
